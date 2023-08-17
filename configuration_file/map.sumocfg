@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <input>
+        <net-file value="D:\experiment\sumo\test1\net\no_htcc.net.xml"/>
+        <route-files value="D:\experiment\sumo\test1\net\vv.rou.xml"/>
+        <additional-files value="D:\experiment\sumo\test1\net\berlin.poly.xml,D:\experiment\sumo\test1\net\stop.add.xml"/>
+    </input>
+
+  <processing>
+        <collision.action value="remove"/>
+  </processing>
+
+  <time>
+       <begin value="0"/>
+       <end value="7200"/>
+       <step-length value="1"/>
+  </time>
+
+  <Report>
+     <no-warnings value="true"/>
+  </Report>
+
+  <gui_only>
+        <gui-settings-file value="D:\experiment\sumo\test1\net\hello.settings.xml"/>
+        <start value="t"/>
+        <quit-on-end value="t"/>
+  </gui_only>
+
+  <output>
+     <fcd-output value="D:\experiment\sumo\test1\net\compliance\new\fcd_o19.out.xml"/>
+     <tripinfo-output value="D:\experiment\sumo\test1\net\compliance\new\tripinfo_o19.out.xml"/>
+  </output>
+
+</configuration>
+

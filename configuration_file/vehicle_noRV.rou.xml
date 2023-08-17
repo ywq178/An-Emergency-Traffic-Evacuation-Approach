@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<routes>
+    <vType id="CarA" accel="0.4" decel="4.5" sigma="0.5" length="4" maxSpeed="12" callFollowMode="IDM" tau="1.4" laneChangeModel="LC2013"/>
+    <vType id="CarD" guiShape="emergency" vClass="emergency" >
+      <param key="has.bluelight.device" value="true"/>
+    </vType>
+    
+    <vehicle id="d1" type="CarD" depart="600.00" departPos="31.45" arrivalPos="33.45"  >
+        <stop busStop="busStop1" duration="30"/>
+        <route edges="1027227127#1 1027227129#0 144001606#1 954878305#0 954926502#1 954929768#1 420872177#0 1090370025#1 368938760#0 46201642#1 381477008#1 658488333 46469721 380147339 729972919#0 729972918 1087744935#0 1087744935#1 1087744935#3 458166897#0 458166897#1 458166897#2 46522007 458177131#0 727702633 511699176 458177130#0 1061622295#1 5670124#0 46522008#1 46522008#4 46522008#9 1051744778 968513230#0 460585328#3 460585328#4 460585328#6 460585328#7 460585328#8 460585328#9 814278017#1 808190587#0 601733867#1"/>
+        <stop parkingArea="accident_point1" duration="0.1"/>
+     </vehicle> 
+</routes>
